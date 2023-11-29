@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+        integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"
+        integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .splide__slide img {
+            width: 100%;
+            height: auto;
+            /* width: 500px;
+            height: 500px; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- example 1 starts -->
+    <!-- <div id="image-slider" class="splide">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="./1.jpg">
+                </li>
+                <li class="splide__slide">
+                    <img src="./2.jpg">
+                </li>
+                <li class="splide__slide">
+                    <img src="./3.jpg">
+                </li>
+            </ul>
+        </div>
+    </div> -->
+    <!-- <script>
+        new Splide('#image-slider').mount();
+    </script> -->
+    <!-- example 1 ends -->
+    <!-- example 2 starts -->
+    <div id="thumbnail-slider" class="splide">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                     <img src="./1.jpg">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./2.jpg">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="./3.jpg">
+                  </li>
+              </ul>
+        </div>
+    </div>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '#thumbnail-slider', {
+                    fixedWidth: 100,
+                    gap       : 10,
+                    rewind    : true,
+                    pagination: false,
+            } ).mount();
+        } );
+    </script>
+    <!-- example 2 ends -->
+</body>
+
+</html>
